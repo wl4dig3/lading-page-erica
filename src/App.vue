@@ -1,10 +1,18 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <router-link to="/" class="px-3">Home</router-link>
+          <router-link to="/about" class="px-3">About</router-link>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        </div>
+      </nav>
+    </div>
   </div>
-  <router-view/>
+  <router-view />
 </template>
+
 
 <style>
 #app {
@@ -17,6 +25,7 @@
 
 #nav {
   padding: 30px;
+  background: #beeed2;
 }
 
 #nav a {
@@ -26,5 +35,14 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  justify-content: end !important;
 }
 </style>
