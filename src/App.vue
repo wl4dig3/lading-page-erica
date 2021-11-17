@@ -1,18 +1,25 @@
 <template>
-  <div id="nav">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <router-link to="/" class="px-3">Home</router-link>
-          <router-link to="/about" class="px-3">About</router-link>
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        </div>
-      </nav>
-    </div>
+  <div>
+    <header class="contenedor">
+      <Nav />
+      <transition name="mi-transicion">
+        <router-view />
+      </transition>
+      <!-- <Footer/> -->
+    </header>
   </div>
-  <router-view />
 </template>
+<script>
+import Nav from "./components/Nav.vue";
+import Footer from "./components/Footer.vue";
 
+export default {
+  components: {
+    Nav,
+    Footer,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -23,26 +30,48 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-  background: #beeed2;
+/* transicion*/
+.mi-transicion-enter-active,
+.mi-transicion-leave-active {
+  transition: opacity 0.3s, padding 0.25s;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.mi-transicion-enter,
+.mi-transicion-leave-to {
+  opacity: 0;
+  padding: 10px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.mi-transicion-enter-to,
+.mi-transicion-leave {
+  opacity: 0.9;
+  padding: 0px;
 }
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-  justify-content: end !important;
+@keyframes entrada {
+  0% {
+    transform: scale (2);
+  }
+
+  50% {
+    transform: scale (1.5);
+  }
+
+  100% {
+    transform: scale (1);
+  }
+}
+
+@keyframes salida {
+  0% {
+    transform: scale (1);
+  }
+
+  50% {
+    transform: scale (1.5);
+  }
+
+  100% {
+    transform: scale (2);
+  }
 }
 </style>
