@@ -2,10 +2,16 @@
   <div>
     <header class="contenedor">
       <Nav />
-      <transition name="mi-transicion">
-        <router-view />
-      </transition>
+      <!-- <transition name="mi-transicion">
+        <router-view/>
+      </transition> -->
       <!-- <Footer/> -->
+      <!-- para agregar la animacion  -->
+      <router-view v-slot="{ Component }">
+        <transition name="slide " mode="out-in">
+          <component :is="Component" :key="$route.path" />
+        </transition>
+      </router-view>
     </header>
   </div>
 </template>
@@ -73,5 +79,15 @@ export default {
   100% {
     transform: scale (2);
   }
+}
+/* nueva animacion */
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30%);
 }
 </style>

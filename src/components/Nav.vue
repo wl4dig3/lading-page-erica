@@ -7,6 +7,8 @@
           <div class="derecha">
           <router-link to="/" class="px-3">Inicio</router-link>
           <router-link to="/about" class="px-3">Sobre mí</router-link>
+          <router-link to="/contacto" class="px-3">Contacto</router-link>
+
           </div>
         </div>
       </nav>
