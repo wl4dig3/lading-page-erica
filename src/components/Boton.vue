@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-      class="btn btn-success"
+      class="btn btn-primary"
       data-bs-target="#collapseTarget"
       data-bs-toggle="collapse"
     >
@@ -14,7 +14,7 @@
 </template>
 <style scoped>
 .collapse {
-  color: #003300;
+  color: #000;
   font-size: 1.2em;
   font-weight: bold;
 }

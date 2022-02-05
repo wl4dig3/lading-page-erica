@@ -3,11 +3,11 @@
     <div class="container-fluid ">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Erica Ortiz</a>
+          <a class="navbar-brand text-light" href="#">Erica Ortiz</a>
           <div class="derecha">
           <router-link to="/" class="px-3">Inicio</router-link>
           <router-link to="/about" class="px-3">Sobre mí</router-link>
-          <router-link to="/contacto" class="px-3">Contacto</router-link>
+          <!-- <router-link to="/contacto" class="px-3">Contacto</router-link> -->
 
           </div>
         </div>
@@ -27,16 +27,18 @@ name: "Nav"
 #nav {
   padding: 5px;
   background:
-  #1AFA3B;
+   #5499c7  ;
 }
 
 #nav a {
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  font-family: 'Lobster';
   font-weight: bold;
-  color: #d4e2cc;
+  color: #96d7e7;
 }
 
 #nav a.router-link-exact-active {
-  color: #074711;
+  color: #f0f7f1;
 }
 .navbar > .container,
 .navbar > .container-fluid,

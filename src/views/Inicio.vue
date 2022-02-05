@@ -32,7 +32,7 @@ export default {
 /* estilo de fuente  */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
 h1 {
-  color: #006600;
+  color: #5499c7;
   font-family: "Merriweather", serif;
   text-shadow: 2px 1.5px #07471198;
   /* padding-top: 20rem; */
@@ -47,6 +47,7 @@ img {
 .home {
   background-image: url("../assets/familia.jpg");
   width: 100%;
+  max-width: 100%;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,9 +60,13 @@ img {
 }
 
 @media (max-width: 364px) {
-  .main {
+  .home {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-areas: 1;
+    grid-auto-rows: 100vh;
+    background-image: url("../assets/famili.jpg");
+    background-size: cover;
+    /* height: 100vh; */
   }
 }
 </style>

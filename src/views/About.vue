@@ -1,20 +1,33 @@
 <template>
   <div class="about">
-    <h1>Contáctame</h1>
+    
     <!-- <div data-tf-widget="ybmTrS" style="width: 100%; height: 400px"></div> -->
-    <Formulario/>
+    <Sobremi class="mt-5"/>
+    <!-- card de bootstrap  -->
+    <Cardsobremi />
+    <!-- fin de la card  -->
   </div>
 </template>
+
 <script>
-import Formulario from '@/components/Formulario'
+
+import Sobremi from '../components/Sobremi.vue';
+import Cardsobremi from "../components/Cardsobremi.vue";
 export default {
-  components: {
-    Formulario
-  }
-}
+  components:{
+    Sobremi,
+    Cardsobremi,
+  },
+};
 </script>
 <style scoped>
 .about {
-  margin:  6rem 0 0 0; 
+  margin:  4rem 0 0 0; 
+  background-image: url("../assets/relax.jpg");
+  width: 100%;
+  max-width: 100%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>
