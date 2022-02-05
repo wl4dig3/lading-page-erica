@@ -2,7 +2,7 @@
   <div class="about">
     
     <!-- <div data-tf-widget="ybmTrS" style="width: 100%; height: 400px"></div> -->
-    <Sobremi class="mt-5"/>
+    <!-- <Sobremi class="mt-5"/> -->
     <!-- card de bootstrap  -->
     <Cardsobremi />
     <!-- fin de la card  -->
@@ -11,11 +11,11 @@
 
 <script>
 
-import Sobremi from '../components/Sobremi.vue';
+// import Sobremi from '../components/Sobremi.vue';
 import Cardsobremi from "../components/Cardsobremi.vue";
 export default {
   components:{
-    Sobremi,
+    // Sobremi,
     Cardsobremi,
   },
 };
@@ -29,5 +29,16 @@ export default {
   height: 88vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 364px) {
+  .about {
+    display: grid;
+    grid-template-areas: 1;
+    grid-auto-rows: 100vh;
+    
+    background-size: cover;
+    /* height: 100vh; */
+  }
 }
 </style>

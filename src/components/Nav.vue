@@ -3,7 +3,7 @@
     <div class="container-fluid ">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Erica Ortiz</a>
+          <a class="navbar-brand text-light">Erica Ortiz</a>
           <div class="derecha">
           <router-link to="/" class="px-3">Inicio</router-link>
           <router-link to="/about" class="px-3">Sobre mí</router-link>

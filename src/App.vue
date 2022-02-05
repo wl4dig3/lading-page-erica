@@ -8,7 +8,7 @@
       <!-- <Footer/> -->
       <!-- para agregar la animacion  -->
       <router-view v-slot="{ Component }">
-        <transition name="slide " mode="out-in">
+        <transition name="route" mode="out-in">
           <component :is="Component" :key="$route.path" />
         </transition>
       </router-view>
@@ -81,12 +81,12 @@ export default {
   }
 }
 /* nueva animacion */
-.slide-enter-active,
-.slide-leave-active {
+.route-enter-active,
+.route-leave-active {
   transition: opacity 1s, transform 1s;
 }
-.slide-enter-from,
-.slide-leave-to {
+.route-enter-from,
+.route-leave-to {
   opacity: 0;
   transform: translateX(-30%);
 }

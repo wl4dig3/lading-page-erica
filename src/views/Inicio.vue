@@ -34,7 +34,7 @@ export default {
 h1 {
   color: #5499c7;
   font-family: "Merriweather", serif;
-  text-shadow: 2px 1.5px #07471198;
+  text-shadow: 2px 1.5px #000;
   /* padding-top: 20rem; */
 }
 .arriba {
