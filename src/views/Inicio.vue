@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="arriba">
-      <h1 class="pt-5">{{ titulo }}</h1>
+      <h1 class="px-3">{{ titulo }}</h1>
       <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
       <Boton class="pt-5 boton" />
@@ -59,7 +59,12 @@ img {
   margin-top: 8rem;
 }
 
-@media (max-width: 364px) {
+@media (max-width: 353px) {
+  h1{
+    font-size: 1em;
+    padding: 0 20px;
+  }
+
   .home {
     display: grid;
     grid-template-areas: 1;
@@ -68,5 +73,6 @@ img {
     background-size: cover;
     /* height: 100vh; */
   }
+  
 }
 </style>

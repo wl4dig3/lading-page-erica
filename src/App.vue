@@ -2,11 +2,7 @@
   <div>
     <header class="contenedor">
       <Nav />
-      <!-- <transition name="mi-transicion">
-        <router-view/>
-      </transition> -->
-      <!-- <Footer/> -->
-      <!-- para agregar la animacion  -->
+      
       <router-view v-slot="{ Component }">
         <transition name="route" mode="out-in">
           <component :is="Component" :key="$route.path" />
@@ -17,12 +13,12 @@
 </template>
 <script>
 import Nav from "./components/Nav.vue";
-import Footer from "./components/Footer.vue";
+// import Footer from "./components/Footer.vue";
 
 export default {
   components: {
     Nav,
-    Footer,
+    // Footer,
   },
 };
 </script>
