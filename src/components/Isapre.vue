@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col">
         <h1>Buscamos el mejor plan para ti</h1>
-        <div class="image"></div>
+        <div class="image mx-auto"></div>
       </div>
     </div>
   </div>
