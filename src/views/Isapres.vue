@@ -1,14 +1,15 @@
 <template>
   <div class="contenedor">
     
-    <Formulario/>
+    <Isapre />
   </div>
 </template>
 <script>
-import Formulario from '@/components/Formulario'
+import Isapre from '@/components/Isapre'
 export default {
   components: {
-    Formulario
+    // Formulario,
+    Isapre
   }
 }
 </script>
@@ -19,3 +20,4 @@ export default {
     }
     
 </style>
+
