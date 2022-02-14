@@ -59,7 +59,7 @@ img {
   margin-top: 8rem;
 }
 
-@media (max-width: 353px) {
+@media (max-width: 363px) {
   h1{
     font-size: 1em;
     padding: 0 20px;

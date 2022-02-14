@@ -26,9 +26,9 @@ h1 {
   text-shadow: 2px 1.5px #000;
 }
   
-@media (max-width: 353px) {
+@media (max-width: 1091px) {
   h1 {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0 20px;
   }
 
@@ -37,9 +37,10 @@ h1 {
     grid-template-areas: 1;
     grid-auto-rows: 100vh;
     background-size: contain;
-    width: 100%;
+    width: 70%;
     max-width: 100%;
     height: 50vh;
+    
   }
 }
 </style>
